@@ -1,4 +1,4 @@
-function count = task3(a, el)
+function count = task3(a)
     [~, n] = size(a);
     count = zeros(1, n);
 

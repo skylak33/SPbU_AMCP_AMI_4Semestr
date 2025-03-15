@@ -1,16 +1,12 @@
 function count = task3(a, el)
     [~, n] = size(a);
-    left = 0;
-    for idx = 1:n
-        if a{idx} == el
-            left = idx;
-            break;
+    count = zeros(1, n);
+
+    for k = 1:n
+        if k == 1
+            count(k) = 0;
+        else
+            count(k) = sum(a(1:k-1) < a(k));
         end
     end
-    count = 0;
-    for idx = 1:left
-        if a{idx} < el
-            count = count + 1;
-        end
-    end
-end 
+end

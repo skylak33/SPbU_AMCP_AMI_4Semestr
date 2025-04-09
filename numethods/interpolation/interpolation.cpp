@@ -1,8 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <cmath>
-#include <iomanip>
-#include <cstdlib>
+#include <bits/stdc++.h>
 
 using namespace std;
 using ld = long double;
@@ -82,7 +78,7 @@ vector<ld> LagrangePolynomial(const vector<ld>& nodes) {
 int main() {
     cout << setprecision(9) << fixed;
     const int N = 5; // количество узлов
-    const ld a = -pi, b = pi; // концы интервала
+    const ld a = -PI, b = PI; // концы интервала
     const ld h = (b - a) / (N - 1); // шаг
 
     vector<ld> nodes1(N);
